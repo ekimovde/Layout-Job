@@ -1,0 +1,97 @@
+@import "@/assets/styles/variables.scss";
+
+.table {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+
+  .table__container {
+    display: flex;
+    padding-bottom: 5px;
+
+    .table__main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow-x: auto;
+      scrollbar-color: $blue #f4f4f4;
+      scrollbar-width: thin;
+      padding-bottom: 5px;
+
+      .table__head {
+        background: $backg-table-dark;
+        padding: 17px;
+        display: block;
+        width: 100%;
+
+        .table__tr {
+          color: $white;
+          @extend %flex-center-between;
+
+          .table__th {
+            width: 70px;
+            font-size: 14px;
+            width: 75px;
+          }
+        }
+      }
+
+      .table__body {
+        background: $backg-table-blue;
+        width: 100%;
+        padding: 17px;
+
+        .table__tr {
+          color: $dark-grey;
+          @extend %flex-center-between;
+          box-sizing: border-box;
+
+          .table__td {
+            box-sizing: border-box;
+            width: 70px;
+            font-size: 14px;
+            width: 75px;
+          }
+        }
+      }
+    }
+  }
+
+  .table__info {
+    @extend %flex-center-between;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 30px;
+
+    .table__item {
+      margin-bottom: 11px;
+      @extend %flex-center-between;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .table__price {
+        color: $dark-grey;
+
+        &.table__price_new {
+          color: $green;
+        }
+      }
+    }
+  }
+
+  .table__buttons {
+    @extend %flex-center;
+    margin-top: 18px;
+
+    button {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

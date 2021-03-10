@@ -1,0 +1,33 @@
+@import "@/assets/styles/variables.scss";
+
+.status {
+  @extend %flex-center;
+
+  .status__circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: $white;
+    @extend %flex-center-center;
+
+    .status__icon {
+      font-size: 26px;
+    }
+
+    &.status__circle_adopted {
+      background: $blue;
+    }
+
+    &.status__circle_rejected {
+      background: $red;
+    }
+  }
+
+  .status__text {
+    width: 72px;
+    font-size: 11px;
+    color: $grey;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+}

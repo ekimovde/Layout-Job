@@ -1,0 +1,26 @@
+@import "@/assets/styles/variables.scss";
+
+.button {
+  background: $white;
+  color: $blue;
+  font-size: 12px;
+  border-style: none;
+  padding: 16px 30px;
+  cursor: pointer;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  @extend %flex-center;
+  width: 225px;
+
+  &.button__block_default {
+    display: block;
+    font-weight: 400;
+  }
+
+  .button__block {
+    .button__icon {
+      font-size: 22px;
+      margin-right: 12px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "@/assets/styles/variables.scss";
+
+.sidebar {
+  width: 303px;
+  background-color: $backg-sidebar;
+  height: calc(100% - 90px);
+  padding: 10px 7px 12px 30px;
+  @extend %flex-center-between;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 90px;
+
+  .sidebar__menu {
+    width: 100%;
+
+    .sidebar__item {
+      padding: 20px 0 20px 0px;
+      border-bottom: 2px solid $blue;
+      @extend %flex-center-left;
+      flex-direction: column;
+
+      .sidebar__title {
+        cursor: pointer;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .sidebar__btn {
+  }
+}

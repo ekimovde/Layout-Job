@@ -1,0 +1,63 @@
+@import "@/assets/styles/variables.scss";
+
+.info {
+  width: calc(100% - 303px);
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  .top {
+    background: $backg-grey;
+    padding: 23px 66px 21px 18px;
+
+    .header {
+      @extend %flex-end;
+      align-items: flex-start;
+
+      .header__text {
+        margin-right: 80px;
+
+        .header__name {
+          color: $black;
+        }
+
+        .header__post {
+          color: $grey;
+          font-size: 13px;
+          margin-top: 5px;
+        }
+      }
+
+      .header__exit {
+        @extend %flex-center;
+
+        .header__circle {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          background: $blue;
+          @extend %flex-center-right;
+
+          .header__icon {
+            font-size: 18px;
+            width: 16px;
+            color: $white;
+          }
+        }
+
+        .header__link {
+          margin-left: 6px;
+          color: $blue;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    padding: 20px;
+  }
+}

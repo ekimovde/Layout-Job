@@ -1,0 +1,46 @@
+$backg-sidebar: #0047ba;
+$backg-grey: #f4f4f4;
+$backg-blue-light: #dee7f5;
+$backg-table-blue: #f2fbff;
+$backg-table-dark: #464851;
+
+$white: #fff;
+$blue: #336cc8;
+$grey: #838588;
+$black: #000;
+$red: #ff144d;
+$dark-grey: #464851;
+$green: #00c4a8;
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-center-left {
+  display: flex;
+  align-items: flex-start;
+}
+
+%flex-center-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+%flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+%flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

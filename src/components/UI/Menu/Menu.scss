@@ -1,0 +1,30 @@
+@import "@/assets/styles/variables.scss";
+
+.menu {
+  @extend %flex-center-left;
+  flex-direction: column;
+  width: 100%;
+
+  .menu__item {
+    @extend %flex-center-between;
+    width: 100%;
+    color: $white;
+    padding: 7px 7px 8px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 4px;
+
+    &:hover {
+      background-color: $blue;
+      border-radius: 4px;
+    }
+
+    &.menu__item_active {
+      background-color: $blue;
+      border-radius: 4px;
+    }
+
+    .menu__text {
+    }
+  }
+}

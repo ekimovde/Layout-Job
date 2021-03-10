@@ -1,0 +1,42 @@
+@import "@/assets/styles/variables.scss";
+
+.plan-item {
+  background: rgb(243, 243, 243);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: block;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .main {
+    @extend %flex-center-between;
+    margin-bottom: 20px;
+
+    .main__info {
+      @extend %flex-center;
+
+      .main__contract {
+        font-weight: 400;
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .main__title {
+          color: $grey;
+          margin-bottom: 8px;
+          display: block;
+        }
+
+        .main__descr {
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+}

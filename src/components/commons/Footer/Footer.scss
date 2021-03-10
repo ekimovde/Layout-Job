@@ -1,0 +1,34 @@
+@import "@/assets/styles/variables.scss";
+
+.foot {
+  @extend %flex-center-between;
+
+  .foot__menu {
+    @extend %flex-center-between;
+    width: 950px;
+
+    .foot__item {
+      color: $grey;
+      font-weight: 400;
+      width: 230px;
+
+      .foot__main {
+        color: $dark-grey;
+
+        &.foot__main-email {
+          width: 180px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .foot__text {
+    color: $grey;
+    font-weight: 400;
+
+    .foot__text-big {
+      font-weight: 700;
+    }
+  }
+}
